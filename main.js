@@ -38,12 +38,14 @@ function gotResults(error,results)
    if(results[0].label=="Budgie Chirping")
    {
        document.getElementById("result_label").style.color="rgb("+random_r+","+random_g+","+random_b+")";
+       document.getElementById("result_confidence").style.color="rgb("+random_r+","+random_g+","+random_b+")";
        img.src="budgies.gif";
        
     }
     else if(results[0].label=="Cat Meow")
    {
        document.getElementById("result_label").style.color="rgb("+random_r+","+random_g+","+random_b+")";
+       document.getElementById("result_confidence").style.color="rgb("+random_r+","+random_g+","+random_b+")";
        img.src="cat.gif";
        
     }
@@ -51,12 +53,14 @@ function gotResults(error,results)
     else if(results[0].label=="Dog Bark")
     {
         document.getElementById("result_label").style.color="rgb("+random_r+","+random_g+","+random_b+")";
+        document.getElementById("result_confidence").style.color="rgb("+random_r+","+random_g+","+random_b+")";
         img.src="dog.gif";
         
      }
      else if(results[0].label=="Lion Roar")
      {
          document.getElementById("result_label").style.color="rgb("+random_r+","+random_g+","+random_b+")";
+         document.getElementById("result_confidence").style.color="rgb("+random_r+","+random_g+","+random_b+")";
          img.src="lion_roar.gif";
          
       }
